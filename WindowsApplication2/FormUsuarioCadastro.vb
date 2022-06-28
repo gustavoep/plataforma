@@ -1,5 +1,8 @@
 ﻿Imports System.Data.OleDb
 
+
+
+
 Public Class FormUsuarioCadastro
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
@@ -72,12 +75,7 @@ Public Class FormUsuarioCadastro
             Sql = "INSERT INTO Usuarios (login, nome, email, senha, administrador, ativo) VALUES(@login, @nome, @email, @senha, @administrador, @ativo)"
 
         Else
-            Sql = ("UPDATE Usuarios SET login=@login, nome=@nome, email=@email, administrador=@administrador, ativo=@ativo")
-            If TxtSenha.Text <> "" Then
-                Sql &= ",senha=@senha "
-            End If
-
-            Sql &= "WHERE id=" & LblID.Text
+            Sql = ("UPDATE Usuarios SET login=@login, nome=@nome, email=@email, administrador=@administrador, ativo=@ativo WHERE id=" & LblID.Text)
         End If
 
         Using cn = New OleDbConnection(conn)
@@ -86,12 +84,10 @@ Public Class FormUsuarioCadastro
                 cmd.Parameters.AddWithValue("@login", TxtLogin.Text)
                 cmd.Parameters.AddWithValue("@nome", TxtNome.Text)
                 cmd.Parameters.AddWithValue("@email", TxtEmail.Text)
+                cmd.Parameters.AddWithValue("@senha", TxtSenha.Text)
                 cmd.Parameters.AddWithValue("@Administrador", IIf(ChkAdministrador.Checked, "S", "N"))
                 cmd.Parameters.AddWithValue("@Ativo", IIf(ChkAtivo.Checked, "S", "N"))
-                If TxtSenha.Text <> "" Then
-                    cmd.Parameters.AddWithValue("@senha", TxtSenha.Text)
-                    cmd.ExecuteNonQuery()
-                End If
+                cmd.ExecuteNonQuery()
             End Using
         End Using
     End Sub
@@ -138,5 +134,9 @@ Public Class FormUsuarioCadastro
         Catch ex As Exception
             MsgBox("Falha:" & ex.Message, vbExclamation, sistema)
         End Try
+    End Sub
+
+    Private Sub LblID_Click(sender As Object, e As EventArgs) Handles LblID.Click
+
     End Sub
 End Class

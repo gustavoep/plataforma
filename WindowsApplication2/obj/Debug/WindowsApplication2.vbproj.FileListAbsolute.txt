@@ -13,3 +13,6 @@ c:\users\labgeo\documents\visual studio 2015\Projects\WindowsApplication2\Window
 c:\users\labgeo\documents\visual studio 2015\Projects\WindowsApplication2\WindowsApplication2\obj\Debug\WindowsApplication2.FormLogin.resources
 c:\users\labgeo\documents\visual studio 2015\Projects\WindowsApplication2\WindowsApplication2\obj\Debug\WindowsApplication2.FormUsuarioConsulta.resources
 C:\Users\LabGeo\Documents\Visual Studio 2015\Projects\WindowsApplication2\WindowsApplication2\obj\Debug\WindowsApplication2.FormUsuarioTrocarSenha.resources
+C:\Users\LabGeo\Documents\Visual Studio 2015\Projects\WindowsApplication2\WindowsApplication2\obj\Debug\WindowsApplication2.Form1.resources
+C:\Users\LabGeo\Documents\Visual Studio 2015\Projects\WindowsApplication2\WindowsApplication2\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\LabGeo\Documents\Visual Studio 2015\Projects\WindowsApplication2\WindowsApplication2\obj\Debug\WindowsApplication2.Form_recuperar.resources

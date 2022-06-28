@@ -32,4 +32,16 @@
     Private Sub TrocarSenhaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TrocarSenhaToolStripMenuItem.Click
         FormUsuarioTrocarSenha.Show()
     End Sub
+
+    Private Sub SolosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SolosToolStripMenuItem.Click
+        Form1.Show()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub CadastroDeAmostrasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CadastroDeAmostrasToolStripMenuItem.Click
+
+    End Sub
 End Class

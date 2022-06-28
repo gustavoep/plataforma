@@ -3,6 +3,7 @@
     Public sistema = "Controle de acesso"
 
     Public conn = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = D:\GEOMATICA\Gustavo+Curso Geoestatistica UFRGS\Catalisa Sensor Green\Database\QrCode\Database2.accdb; Persist Security Info = False"
+    Public con = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = D:\GEOMATICA\Gustavo+Curso Geoestatistica UFRGS\Catalisa Sensor Green\Database\QrCode\Database3.accdb; Persist Security Info = False"
 
     Public pIdUsuario As Integer
     Public pNomeUsuario As String
